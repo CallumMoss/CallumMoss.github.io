@@ -1,0 +1,29 @@
+/* https://www.color-hex.com/color-palette/99157 */
+
+/* Remove any presets: */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+body {
+    background-color: #181818;
+  }
+  h1 {
+    color:white;
+    font-family: verdana;
+    font-size: 300%;
+    margin-bottom: 5px;
+  }
+  p {
+    color: white;
+    font-family: verdana;
+    font-size: 150%;
+    margin-bottom: 5px;
+  }
+  a {
+    color: white;
+    font-family: verdana;
+    font-size: 150%;
+  }
