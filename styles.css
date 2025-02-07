@@ -1,29 +1,109 @@
 /* https://www.color-hex.com/color-palette/99157 */
-
-/* Remove any presets: */
+/* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body and Container Layout */
 body {
-    background-color: #181818;
-  }
-  h1 {
-    color:white;
-    font-family: verdana;
-    font-size: 300%;
-    margin-bottom: 5px;
-  }
-  p {
-    color: white;
-    font-family: verdana;
-    font-size: 150%;
-    margin-bottom: 5px;
-  }
-  a {
-    color: white;
-    font-family: verdana;
-    font-size: 150%;
-  }
+  background-color: #181818; /* Dark background for dark mode */
+  color: white; /* White text for dark mode */
+  font-family: 'Verdana', 'Arial', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode Styling */
+body.light-mode {
+  background-color: #f4f4f4; /* Light background for light mode */
+  color: #333; /* Black text for light mode */
+}
+
+/* Header Styling */
+h1 {
+  color: inherit; /* Inherit text color from body */
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: inherit; /* Inherit text color from body */
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Links Styling */
+a {
+  color: #00A9E0; /* Blue links */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #f0a500; /* Change to amber on hover */
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Icon Specifics */
+.theme-toggle i {
+  margin-right: 5px;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+/* Light/Dark Mode Toggle */
+#theme-toggle-checkbox:checked + #theme-icon {
+  display: none;
+}
+
+#theme-toggle-checkbox:checked + #theme-icon + .fas.fa-sun {
+  display: inline;
+}
+
+/* Hide Sun and Moon icons initially */
+#theme-icon {
+  display: inline;
+}
+
+.fas.fa-sun {
+  display: none;
+}
