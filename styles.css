@@ -29,14 +29,14 @@ body.light-mode {
 h1 {
   color: inherit; /* Inherit text color from body */
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 h2 {
   color: inherit; /* Inherit text color from body */
   font-size: 1.5em;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   text-align: left;
 }
 
@@ -53,7 +53,7 @@ img {
 p {
   font-size: 1.1em;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 /* Links Styling */
