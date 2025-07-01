@@ -40,9 +40,23 @@ h2 {
   text-align: left;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  margin-bottom: 4px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
 img {
-  width: 100%;
-  max-width: 200px;
   height: auto;
   border-radius: 10px;
   display: block;
