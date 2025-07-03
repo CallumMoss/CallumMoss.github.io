@@ -57,10 +57,11 @@ figcaption {
 }
 
 img {
+  max-width: 920px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* Curves the corners */
   display: block;
-  margin: 20px 0;
+  margin: 20px 0; /* 20  space between above text and image, then its caption is 0px space */
 }
 
 /* Paragraph Styling */
