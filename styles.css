@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
-/* Body and Container Layout */
+/* Base Styles */
 body {
-  background-color: #181818; /* Dark background for dark mode */
-  color: white; /* White text for dark mode */
+  background-color: #181818;
+  color: white;
   font-family: 'Verdana', 'Arial', sans-serif;
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   font-size: 16px;
@@ -21,23 +22,37 @@ body {
 
 /* Light Mode Styling */
 body.light-mode {
-  background-color: #f4f4f4; /* Light background for light mode */
-  color: #333; /* Black text for light mode */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header Styling */
+/* Headings */
 h1 {
-  color: inherit; /* Inherit text color from body */
-  font-size: 3em;
-  margin-bottom: 0px;
+  font-size: 2.2em;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 h2 {
-  color: inherit; /* Inherit text color from body */
   font-size: 1.5em;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-align: left;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Images & Figures */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 figure {
@@ -45,45 +60,25 @@ figure {
   padding: 0;
 }
 
-figure img {
-  margin-bottom: 4px;
-}
-
 figcaption {
   font-size: 0.9em;
-  margin: 0;
-  padding: 0;
   padding-bottom: 20px;
+  text-align: left;
 }
 
-img {
-  max-width: 920px;
-  height: auto;
-  border-radius: 10px; /* Curves the corners */
-  display: block;
-  margin: 20px 0; /* 20  space between above text and image, then its caption is 0px space */
-}
-
-/* Paragraph Styling */
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Links Styling */
+/* Links */
 a {
-  color: #00A9E0; /* Blue links */
+  color: #00A9E0;
   text-decoration: none;
   font-size: 1em;
 }
 
 a:hover {
-  color: #f0a500; /* Change to amber on hover */
+  color: #f0a500;
   text-decoration: underline;
 }
 
-/* Button Styling */
+/* Theme Toggle Button */
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -96,7 +91,6 @@ a:hover {
   border-radius: 5px;
 }
 
-/* Icon Specifics */
 .theme-toggle i {
   margin-right: 5px;
 }
@@ -105,7 +99,6 @@ a:hover {
   display: none;
 }
 
-/* Light/Dark Mode Toggle */
 #theme-toggle-checkbox:checked + #theme-icon {
   display: none;
 }
@@ -114,11 +107,37 @@ a:hover {
   display: inline;
 }
 
-/* Hide Sun and Moon icons initially */
+/* Hide icons initially */
 #theme-icon {
   display: inline;
 }
 
 .fas.fa-sun {
   display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  figcaption {
+    text-align: center;
+  }
 }
